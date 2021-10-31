@@ -751,7 +751,7 @@ trait NodeTrait
      *
      * @param self $parent
      */
-    public static function create(array $attributes = [], self $parent = null)
+    public static function create(array $attributes = [], self $parent = null, $writeable = false)
     {
         $children = Arr::pull($attributes, 'children');
 
@@ -761,7 +761,12 @@ trait NodeTrait
             $instance->appendToNode($parent);
         }
 
-        $instance->save();
+        $methods = get_class_methods($instance);
+        if(in_array('isWriteable', $methods) && $writeable) {
+            $instance->writeable()->save();
+        } else { 
+            $instance->save();
+        }
 
         // Now create children
         $relation = new EloquentCollection;
