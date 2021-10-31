@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Database\Capsule\Manager as Capsule;
-use Kalnoy\Nestedset\NestedSet;
+use blinkinglight\Nestedset\NestedSet;
 
 class ScopedNodeTest extends PHPUnit\Framework\TestCase
 {
