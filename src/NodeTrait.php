@@ -1,6 +1,6 @@
 <?php
 
-namespace blinkinglight\Nestedset;
+namespace Blinkinglight\Nestedset;
 
 use Exception;
 use Illuminate\Database\Eloquent\Collection as EloquentCollection;
@@ -267,7 +267,7 @@ trait NodeTrait
     /**
      * Get the node siblings and the node itself.
      *
-     * @return \blinkinglight\Nestedset\QueryBuilder
+     * @return \Blinkinglight\Nestedset\QueryBuilder
      */
     public function siblingsAndSelf()
     {

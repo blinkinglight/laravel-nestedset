@@ -1,7 +1,7 @@
 ### Upgrading from 4.0 to 4.1
 
-Nested sets feature has been moved to trait `blinkinglight\Nestedset\NodeTrait`, but
-old `blinkinglight\Nestedset\Node` class is still available.
+Nested sets feature has been moved to trait `Blinkinglight\Nestedset\NodeTrait`, but
+old `Blinkinglight\Nestedset\Node` class is still available.
 
 Some methods on trait were renamed (see changelog), but still available on legacy
 node class.

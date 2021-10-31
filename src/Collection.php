@@ -1,6 +1,6 @@
 <?php
 
-namespace blinkinglight\Nestedset;
+namespace Blinkinglight\Nestedset;
 
 use Illuminate\Database\Eloquent\Collection as BaseCollection;
 use Illuminate\Database\Eloquent\Model;

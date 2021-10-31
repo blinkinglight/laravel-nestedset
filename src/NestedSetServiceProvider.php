@@ -1,6 +1,6 @@
 <?php
 
-namespace blinkinglight\Nestedset;
+namespace Blinkinglight\Nestedset;
 
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\ServiceProvider;

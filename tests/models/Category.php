@@ -4,7 +4,7 @@ use \Illuminate\Database\Eloquent\Model;
 
 class Category extends Model {
 
-    use \Illuminate\Database\Eloquent\SoftDeletes, \blinkinglight\Nestedset\NodeTrait;
+    use \Illuminate\Database\Eloquent\SoftDeletes, \Blinkinglight\Nestedset\NodeTrait;
 
     protected $fillable = array('name', 'parent_id');
 

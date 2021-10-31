@@ -3,7 +3,7 @@
 
 class MenuItem extends \Illuminate\Database\Eloquent\Model
 {
-    use \blinkinglight\Nestedset\NodeTrait;
+    use \Blinkinglight\Nestedset\NodeTrait;
 
     public $timestamps = false;
 
