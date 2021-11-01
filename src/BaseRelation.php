@@ -118,10 +118,7 @@ abstract class BaseRelation extends Relation
      *
      * @return mixed
      */
-    public function getRelationQuery(
-        EloquentBuilder $query, EloquentBuilder $parent,
-        $columns = [ '*' ]
-    ) {
+    public function getRelationQuery() {
         return $this->getRelationExistenceQuery($query, $parent, $columns);
     }
 
